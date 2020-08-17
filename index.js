@@ -8,7 +8,9 @@ showTime = () => {
   minute = (minute < 10) ? `0${minute}` : minute;
   second = (second < 10) ? `0${second}` : second;
 
-  document.getElementById('clock').innerHTML = `${hour}:${minute}:${second}`;
+  let displayTime = `${hour}:${minute}:${second}`;
+
+  document.getElementById('clock').innerHTML = displayTime;
 }
 
 updateTime = () => {
